@@ -83,19 +83,10 @@ u8g2.print(shuffleMode ? "ON" : "OFF");
 }
 
 void flashPage() {
-  u8g2.firstPage();
-  do {
-    u8g2.drawXBMP(0, 0, 128, 64, wHeadphone_soy);
-  } while (u8g2.nextPage());
-  delay(2000); //show logo for 2 sec
-
-  u8g2.firstPage();
-  do {
-    u8g2.setFont(u8g2_font_profont29_mf);
-    u8g2.setCursor(0, 32);
-    u8g2.print(F("Nusoipod"));
-  } while (u8g2.nextPage());
-  delay(500);
+  drawIcon(soundpod_icon_pack_font, u8g2.getDisplayWidth() / 2 - 12, u8g2.getDisplayHeight() - 22, 66); //drawing spectrum for splash screen
+  u8g2.setFont(u8g2_font_glasstown_nbp_tf);
+  u8g2.setCursor(50, 63);
+  u8g2.print(F("Soundpod"));
 }
 
 void topMenu() {
