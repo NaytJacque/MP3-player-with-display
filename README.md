@@ -1,6 +1,8 @@
 # MP3-Player-Berbasis-Arduino
 MP3 player berbasis Arduino dengan display
 
+![hasil akhir](https://github.com/NaytJacque/MP3-player-with-display/blob/main/Diagram%20Sirkuit/IMG20260815111111.jpg)
+
 ## Komponen
 * 1x Arduino Nano
 * 1x Display OLED SSD1306 I2C
